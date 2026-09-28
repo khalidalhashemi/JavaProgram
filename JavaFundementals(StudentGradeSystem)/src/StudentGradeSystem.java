@@ -1,6 +1,12 @@
 import java.util.Scanner;
 
 public class StudentGradeSystem {
+
+    public static double calculateAverage(double subject1, double subject2, double subject3) {
+        return (subject1 + subject2 + subject3) / 3;
+    }
+
+
     public static void main(String[] args) throws Exception {
 
         Scanner scanner = new Scanner(System.in);
@@ -20,6 +26,10 @@ public class StudentGradeSystem {
 
         System.out.print("Subject 3: English: ");
         double englishMark = scanner.nextDouble();
+
+        double averageGrade = calculateAverage(scienceMark, mathMark, englishMark);
+
+        
 
     }
 }

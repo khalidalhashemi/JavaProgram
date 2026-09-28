@@ -60,7 +60,15 @@ public class StudentGradeSystem {
 
         String finalStudentStatus = studentStatus(averageGrade);
 
-        
+        System.out.println("\n...Student Information... ");
+        System.out.println("Student Name: " + studentName);
+        System.out.println("Student Age: " + studentAge);
+        System.out.println("Science Grade: " + scienceMark);
+        System.out.println("Math Grade: " + mathMark);
+        System.out.println("English Grade: " + englishMark);
+        System.out.println("Average Grade: " + averageGrade);
+        System.out.println("Final Result: " + finalResult);
+        System.out.println("Student Status: " + finalStudentStatus);
 
     }
 }

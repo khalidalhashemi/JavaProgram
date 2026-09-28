@@ -22,6 +22,17 @@ public class StudentGradeSystem {
     }
 
 
+    public static String studentStatus(double averageGrade) {
+        if (averageGrade >= 90) {
+            return "Excellent performance";
+        } else if (averageGrade >= 60 && averageGrade < 90) {
+            return "You passed!";
+        } else {
+            return "You failed. Try again!";
+        }
+    } 
+
+
     public static void main(String[] args) throws Exception {
 
         Scanner scanner = new Scanner(System.in);
@@ -46,6 +57,10 @@ public class StudentGradeSystem {
         double averageGrade = calculateAverage(scienceMark, mathMark, englishMark);
 
         String finalResult = classifyGrade(averageGrade);
+
+        String finalStudentStatus = studentStatus(averageGrade);
+
+        
 
     }
 }
